@@ -1,8 +1,15 @@
 import React from 'react';
 import type { NextPage } from 'next';
+import MainLayout from '../layouts/MainLayout';
 
 const Home: NextPage = function () {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <MainLayout>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quos dolor animi quam? Incidunt eum quaerat recusandae? Maiores,
+      cum possimus! Delectus ea soluta sequi rem quos quidem amet maxime nesciunt dolor!
+    </MainLayout>
+  );
 };
 
 export default Home;
