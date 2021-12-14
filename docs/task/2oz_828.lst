@@ -1,0 +1,1570 @@
+BD
+SET_METRIC
+C
+BEGIN_EINRICHTEPLAN_INFO
+C
+ZA,MM,24
+MM,AT,1,  10,1,1,,'Maschine'                              ,,'',T
+MM,AT,1,  20,1,1,,'Typ'                                   ,,'',Z
+MM,AT,1,  30,1,1,,'Steuerung'                             ,,'',T
+MM,AT,1,  40,1,1,,'Variante'                              ,,'',Z
+MM,AT,1,  50,1,1,,'Firma'                                 ,,'',T
+MM,AT,1,  60,1,1,,'Programmnummer'                        ,,'',T
+MM,AT,1,  70,1,1,,'Bearbeiter'                            ,,'',T
+MM,AT,1,  80,1,1,,'Datum'                                 ,,'',T
+MM,AT,1,  90,1,1,,'Auftragsname'                          ,,'',T
+MM,AT,1, 100,1,1,,'Anzahl der Programmdurchlaeufe'        ,,'',Z
+MM,AT,1, 110,1,1,,'Tafelname'                             ,,'',T
+MM,AT,1, 120,1,1,,'Speicherbedarf'                        ,,'',Z
+MM,AT,1, 130,1,1,,'Material-ID'                           ,,'',T
+MM,AT,1, 140,1,1,,'Tafelgewicht'                          ,,'kg',Z
+MM,AT,1, 150,1,1,,'Maschinenzeit'                         ,,'min',Z
+MM,AT,1, 160,1,1,,'Bemerkung'                             ,,'',T
+MM,AT,1, 170,1,1,,'Flag Automatisiert'                    ,,'Bool',Z
+MM,AT,1, 180,1,1,,'Flag ToPsxxx-Programm'                 ,,'Bool',Z
+MM,AT,1, 190,1,1,,'Einrichteplanfilename'                 ,,'',T
+MM,AT,1, 200,1,1,,'Lagergutbezeichnung'                   ,,'',T
+MM,AT,1, 210,1,1,,'Palettierungsflag'                     ,,'Bool',Z
+MM,AT,1, 220,1,1,,'Palettierungmodus'                     ,,'',Z
+MM,AT,1, 250,1,1,,'SystemPalletType'                      ,,'',T
+MM,AT,1, 280,1,1,,'viewer name machine'                   ,,'',T
+C
+ZA,DA,1
+DA,'TC1000R',2,'Bo PNC-P',1,'','2OZ_828','¬‡Ò¸ÍÓ‚‡ ﬁ.¿','22.05.2019',
+*  '2oz_828',1,'D:\Vaskova\5›“.301.828\s = 2 oz\2oz_828.LST',22166,
+*  'OZ-20',11.77,7.79,' ',0,1,
+*  'D:\Vaskova\5›“.301.828\s = 2 oz\2oz_828.PDF','',0,1,'',
+*  'TruPunch 1000 (S05)'
+C
+ENDE_EINRICHTEPLAN_INFO
+C
+BEGIN_PTT
+C
+ZA,MM,28
+MM,AT,1,  10,1,1,,'Tabellenidentifikator'            ,,'',T
+MM,AT,1,  20,1,1,,'GEWIRO Drehzahl'                  ,,'1/min',Z
+MM,AT,1,  30,1,1,,'GEWIRO Schmierbehaelter Nr.'      ,,'',Z
+MM,AT,1,  40,1,1,,'GEWIRO Anzahl Schmierimpulse'     ,,'',Z
+MM,AT,1,  60,1,1,,'OT-Offset'                        ,,'mm',Z
+MM,AT,1,  70,1,1,,'UT-Offset'                        ,,'mm',Z
+MM,AT,1,  80,1,1,,'Arbeitslage'                      ,,'',Z
+MM,AT,1,  90,1,1,,'TRUMPF-Kennung'                   ,,'',Z
+MM,AT,1, 100,1,1,,'Anz.C-Achsen Drehung'             ,,'',Z
+MM,AT,1, 110,1,1,,'Tabellenart (Werkzeugtyp)'        ,,'',Z
+MM,AT,1, 120,1,1,,'Vorschub'                         ,,'m/min',Z
+MM,AT,1, 130,1,1,,'Stangendruck Abstreifer'          ,,'Bool',Z
+MM,AT,1, 140,1,1,,'Niederhalterkraft'                ,,'N',Z
+MM,AT,1, 150,1,1,,'Freifahrweg'                      ,,'mm',Z
+MM,AT,1, 160,1,1,,'Niederhalter'                     ,,'',Z
+MM,AT,1, 170,1,1,,'Softpunch'                        ,,'',Z
+MM,AT,1, 180,1,1,,'Stanzen mit Verzoegerung'         ,,'',Z
+MM,AT,1, 190,1,1,,'Absaugung'                        ,,'',Z
+MM,AT,1, 200,1,1,,'Werkzeugschmierung'               ,,'',Z
+MM,AT,1, 210,1,1,,'Werkzeugidentnummer'              ,,'',T
+MM,AT,1, 220,1,1,,'Werkzeugbemerkung'                ,,'',T
+MM,AT,1, 230,1,1,,'Wzg-ID. Gueltigkeit'              ,,'',Z
+MM,AT,1, 240,1,1,,'UT2_Offset'                       ,,'mm',Z
+MM,AT,1, 250,1,1,,'OT2_Offset'                       ,,'mm',Z
+MM,AT,1, 260,1,1,,'Vorschub je Hub'                  ,,'mm',Z
+MM,AT,1, 270,1,1,,'Geschwindigkeit'                  ,,'m/min',Z
+MM,AT,1, 280,1,1,,'Geschw.Reduzierung Stanzhub ab'   ,,'%',Z
+MM,AT,1, 290,1,1,,'Geschw.Reduzierung Stanzhub auf'  ,,'%',Z
+C
+ZA,DA,4
+DA,'PTT-1',0,0,0,0.000,0.000,0,1,0.00,4,0.00,0,0,0.000,0,0,0,1,2,
+*  '04125065','Pryam 12.5x6.5mm',1,0.000,0.000,0.00,0.00,100,100
+DA,'PTT-2',0,0,0,0.000,0.000,0,1,0.00,8,0.00,0,0,0.000,0,0,0,1,2,
+*  '08200120','Oval 20x12mm',1,0.000,0.000,0.00,0.00,100,100
+DA,'PTT-3',0,0,0,0.000,0.000,0,1,0.00,4,0.00,0,0,0.000,0,0,0,1,2,
+*  '04250040','Pryam 25x4mm',1,0.000,0.000,0.00,0.00,100,100
+DA,'PTT-4',0,0,0,0.000,0.000,0,1,0.00,4,0.00,0,0,0.000,0,0,0,1,2,
+*  '04762051','Pryam 76.2x5mm',1,0.000,0.000,0.00,0.00,100,100
+C
+ENDE_PTT
+C
+BEGIN_SHEET_TECH
+C
+ZA,MM,26
+MM,AT,1,  10,1,1,,'Tabellenidentifikator'                 ,,'',T
+MM,AT,1,  20,1,1,,'Blechmass X'                           ,,'mm',Z
+MM,AT,1,  30,1,1,,'Blechmass Y'                           ,,'mm',Z
+MM,AT,1,  40,1,1,,'Blechmass Z'                           ,,'mm',Z
+MM,AT,1,  50,1,1,,'Blechtyp'                              ,,'',Z
+MM,AT,1,  60,1,1,,'Blechdickenoffset'                     ,,'mm',Z
+MM,AT,1,  70,1,1,,'kratzerarm'                            ,,'Bool',Z
+MM,AT,1,  80,1,1,,'Material-ID'                           ,,'',T
+MM,AT,1,  90,1,1,,'Anzahl Pratzen'                        ,,'',Z
+MM,AT,1, 100,1,1,,'Magazinplatz Pratze 1'                 ,,'',Z
+MM,AT,1, 110,1,1,,'Magazinplatz Pratze 2'                 ,,'',Z
+MM,AT,1, 120,1,1,,'Magazinplatz Pratze 3'                 ,,'',Z
+MM,AT,1, 130,1,1,,'Magazinplatz Pratze 4'                 ,,'',Z
+MM,AT,1, 160,1,1,,'Magazinplatz Pratze 5'                 ,,'',Z
+MM,AT,1, 170,1,1,,'Magazinplatz Pratze 6'                 ,,'',Z
+MM,AT,1, 180,1,1,,'1.vom Blech ueberd.Steckplatz'         ,,'',Z
+MM,AT,1, 190,1,1,,'letzter ueberdeckt.Steckplatz'         ,,'',Z
+MM,AT,1, 200,1,1,,'TRUMPF-Kennung'                        ,,'',Z
+MM,AT,1, 210,1,1,,'Bearbeitung zwischen Pratzen'          ,,'',Z
+MM,AT,1, 220,1,1,,'Blechmass X real'                      ,,'mm',Z
+MM,AT,1, 230,1,1,,'Blechmass Y real'                      ,,'mm',Z
+MM,AT,1, 240,1,1,,'Materialkennung'                       ,,'',T
+MM,AT,1, 250,1,1,,'Beschleunigungsanpassung'              ,,'Bool',Z
+MM,AT,1, 260,1,1,,'Werkstoffdichte'                       ,,'kg/dm3',Z
+MM,AT,1, 270,1,1,,'Formatbeschreibung fur GRIP'           ,,'',Z
+MM,AT,1, 290,1,1,,'Werkstoffkennung'                      ,,'',T
+C
+ZA,DA,1
+DA,'SHT-1',1250,600,2.00,1,0.00,0,'',3,3,7,9,0,0,0,1,10,1,-1,1250,600,
+*  'OZ-20',0,7.85,0,'1.0038'
+C
+ENDE_SHEET_TECH
+C
+BEGIN_SHEET_LOAD
+C
+ZA,MM,25
+MM,AT,1,  10,1,1,,'Tabellenidentifikator'                 ,,'',T
+MM,AT,1,  20,1,1,,'Beladeposition X'                      ,,'mm',Z
+MM,AT,1,  30,1,1,,'Beladeposition Y'                      ,,'mm',Z
+MM,AT,1,  40,1,1,,'Vorschub zur Beladeposition'           ,,'m/min',Z
+MM,AT,1,  50,1,1,,'Verrechnung MultiToolversatz'          ,,'Bool',Z
+MM,AT,1,  60,1,1,,'Trigger Material beladen UB'           ,,'',Z
+MM,AT,1,  70,1,1,,'TRUMPF-Kennung'                        ,,'',Z
+MM,AT,1, 500,1,1,,'Beladegeraet'                          ,,'',Z
+MM,AT,1, 510,1,1,,'Lift Offset x Beladestapel'            ,,'mm',Z
+MM,AT,1, 520,1,1,,'LIFT_SAUGERGRUPPE_1'                   ,,'',Z
+MM,AT,1, 530,1,1,,'LIFT_SAUGERGRUPPE_2'                   ,,'',Z
+MM,AT,1, 540,1,1,,'LIFT_SAUGERGRUPPE_3'                   ,,'',Z
+MM,AT,1, 550,1,1,,'LIFT_SAUGERGRUPPE_4'                   ,,'',Z
+MM,AT,1, 560,1,1,,'LIFT_SAUGERGRUPPE_5'                   ,,'',Z
+MM,AT,1, 570,1,1,,'Lift Drehpunktsauger'                  ,,'',Z
+MM,AT,1, 580,1,1,,'Lift Doppelblechdet aktiv'             ,,'Bool',Z
+MM,AT,1, 600,1,1,,'Lift Geschwindigkeit'                  ,,'%',Z
+MM,AT,1, 610,1,1,,'Lift Beschleunigung'                   ,,'%',Z
+MM,AT,1, 710,1,1,,'Anschlagstift'                         ,,'',Z
+MM,AT,1, 750,1,1,,'LIFT_SAUGERGRUPPE_6'                   ,,'',Z
+MM,AT,1, 770,1,1,,'Belad. vorbereit. Ausrichttisch'       ,,'Bool',Z
+MM,AT,1, 780,1,1,,'Einlegehilfe'                          ,,'Bool',Z
+MM,AT,1, 790,1,1,,'Vorschub gegen Pratzen'                ,,'m/min',Z
+MM,AT,1, 800,1,1,,'Vorschub gegen Anschlagstift'          ,,'m/min',Z
+MM,AT,1, 860,1,1,,'Liftabschaelart'                       ,,'',Z
+C
+ZA,DA,1
+DA,'SHL-1',240.000,140.010,97.082,0,0,1,1,0.00,0,0,0,0,0,0,0,0.00,
+*  0.00,1,0,0,0,0.00,0.00,0
+C
+ENDE_SHEET_LOAD
+C
+BEGIN_SHEET_UNLOAD
+C
+ZA,MM,77
+MM,AT,1,  10,1,1,,'Tabellenidentifikator'            ,,'',T
+MM,AT,1,  20,1,1,,'Entladeposition X'                ,,'mm',Z
+MM,AT,1,  30,1,1,,'Entladeposition Y'                ,,'mm',Z
+MM,AT,1,  40,1,1,,'Vorschub zur Entladeposition'     ,,'m/min',Z
+MM,AT,1,  50,1,1,,'Verrechnung MultiToolversatz'     ,,'Bool',Z
+MM,AT,1,  60,1,1,,'Trigger Material entladen UB'     ,,'',Z
+MM,AT,1,  70,1,1,,'TRUMPF-Kennung'                   ,,'',Z
+MM,AT,1, 200,1,1,,'Huellgeometrie X'                 ,,'mm',Z
+MM,AT,1, 210,1,1,,'Huellgeometrie Y'                 ,,'mm',Z
+MM,AT,1, 220,1,1,,'Offset X'                         ,,'mm',Z
+MM,AT,1, 230,1,1,,'Schiebeweg zurueckfahren'         ,,'Bool',Z
+MM,AT,1, 240,1,1,,'Ausschiebeweg X'                  ,,'mm',Z
+MM,AT,1, 250,1,1,,'Ausschiebeweg Y'                  ,,'mm',Z
+MM,AT,1, 260,1,1,,'Ausschiebevorschub'               ,,'m/min',Z
+MM,AT,1, 270,1,1,,'mit Lichtschrankenueberwachung'   ,,'Bool',Z
+MM,AT,1, 280,1,1,,'mit Blasluftunterstuetzung'       ,,'Bool',Z
+MM,AT,1, 290,1,1,,'mit definierter Klappe'           ,,'',Z
+MM,AT,1, 300,1,1,,'Klappe auf (0)/ zu (1)'           ,,'',Z
+MM,AT,1, 310,1,1,,'HOELA fahren nach Trennen'        ,,'Bool',Z
+MM,AT,1, 500,1,1,,'Pratzen alle'                     ,,'Bool',Z
+MM,AT,1, 510,1,1,,'Pratze 1'                         ,,'Bool',Z
+MM,AT,1, 520,1,1,,'Pratze 2'                         ,,'Bool',Z
+MM,AT,1, 530,1,1,,'Pratze 3'                         ,,'Bool',Z
+MM,AT,1, 540,1,1,,'Pratze 4'                         ,,'Bool',Z
+MM,AT,1, 550,1,1,,'Pratze 5'                         ,,'Bool',Z
+MM,AT,1, 560,1,1,,'Pratze 6'                         ,,'Bool',Z
+MM,AT,1, 570,1,1,,'Kuebel Ablageort'                 ,,'',Z
+MM,AT,1, 580,1,1,,'Entladegeraet'                    ,,'',Z
+MM,AT,1, 590,1,1,,'LIFT_ENTNAHMEPOS'                 ,,'mm',Z
+MM,AT,1, 600,1,1,,'LIFT_ABLEGEORT'                   ,,'',Z
+MM,AT,1, 610,1,1,,'LIFT_OFFSET_IN_X'                 ,,'mm',Z
+MM,AT,1, 620,1,1,,'SORT_OFFSET_IN_Y'                 ,,'mm',Z
+MM,AT,1, 630,1,1,,'LIFT_MATERIALDICKE_ABLEGEN'       ,,'mm',Z
+MM,AT,1, 640,1,1,,'LIFT_SAUGERGRUPPE_1'              ,,'',Z
+MM,AT,1, 650,1,1,,'LIFT_SAUGERGRUPPE_2'              ,,'',Z
+MM,AT,1, 660,1,1,,'LIFT_SAUGERGRUPPE_3'              ,,'',Z
+MM,AT,1, 670,1,1,,'LIFT_SAUGERGRUPPE_4'              ,,'',Z
+MM,AT,1, 680,1,1,,'LIFT_SAUGERGRUPPE_5'              ,,'',Z
+MM,AT,1, 690,1,1,,'LIFT_GESCHW_LIFT'                 ,,'%',Z
+MM,AT,1, 700,1,1,,'LIFT_BESCHL_LIFT'                 ,,'%',Z
+MM,AT,1, 710,1,1,,'LIFT_GESCHW_SORT'                 ,,'%',Z
+MM,AT,1, 720,1,1,,'LIFT_BESCHL_SORT'                 ,,'%',Z
+MM,AT,1, 730,1,1,,'LZYKL_T_ABLEGEN'                  ,,'Bool',Z
+MM,AT,1, 740,1,1,,'LZYKL_T_AUS_PRATZEN_ENTL_ABL'     ,,'Bool',Z
+MM,AT,1, 750,1,1,,'LZYKL_T_VON_OBEN_ABWERFEN'        ,,'Bool',Z
+MM,AT,1, 760,1,1,,'LZYKL_T_AUS_H_BL_ST_VOLL_ABWRF'   ,,'Bool',Z
+MM,AT,1, 770,1,1,,'LZYKL_T_V_OB_UNTER_LI_TI_ABWRF'   ,,'Bool',Z
+MM,AT,1, 820,1,1,,'Zurueckfahren nach Ausschieben'   ,,'Bool',Z
+MM,AT,1, 830,1,1,,'LIFT_SAUGERGRUPPE_6'              ,,'',Z
+MM,AT,1, 850,1,1,,'Pratzensensoren ausblenden'       ,,'',Z
+MM,AT,1, 860,1,1,,'minimale Flaeche'                 ,,'mm2',Z
+MM,AT,1, 870,1,1,,'maximale Flaeche'                 ,,'mm2',Z
+MM,AT,1, 880,1,1,,'Saugerrahmenverschiebung Y'       ,,'mm',Z
+MM,AT,1, 890,1,1,,'Einlegehilfe'                     ,,'Bool',Z
+MM,AT,1,1000,1,1,,'Wurzeltabelle'                    ,,'',T
+MM,AT,1,1010,1,1,,'Aussenkonturdatei'                ,,'',T
+MM,AT,1,1020,1,1,,'Stapelgut'                        ,,'',Z
+MM,AT,1,1030,1,1,,'Zeichnungsnummer'                 ,,'',T
+MM,AT,1,1040,1,1,,'Vorg Ablegehoehe'                 ,,'mm',Z
+MM,AT,1,1050,1,1,,'Vorg Ablegeart'                   ,,'',Z
+MM,AT,1,1060,1,1,,'Vorg Ensorgegeraet'               ,,'',Z
+MM,AT,1,1070,1,1,,'umschreibendes Rechteck x'        ,,'mm',Z
+MM,AT,1,1080,1,1,,'umschreibendes Rechteck y'        ,,'mm',Z
+MM,AT,1,1090,1,1,,'Vorg Stapeldicke'                 ,,'mm',Z
+MM,AT,1,1100,1,1,,'Vorg Stapelhoehe max'             ,,'mm',Z
+MM,AT,1,1110,1,1,,'Vorg Messteilfrequenz'            ,,'',Z
+MM,AT,1,1120,1,1,,'Vorg Stueckzahl pro Stapel'       ,,'',Z
+MM,AT,1,1130,1,1,,'Vorg Palettenoffset x'            ,,'mm',Z
+MM,AT,1,1140,1,1,,'Vorg Palettenoffset y'            ,,'mm',Z
+MM,AT,1,1150,1,1,,'Vorg Entsorgeeinheit Nr'          ,,'',Z
+MM,AT,1,1160,1,1,,'Offset x Saugerrahmen Teil'       ,,'mm',Z
+MM,AT,1,1170,1,1,,'Offset y Saugerrahmen Teil'       ,,'mm',Z
+MM,AT,1,1180,1,1,,'Zeichnungsname'                   ,,'',T
+MM,AT,1,1190,1,1,,'ZeichnungsFileName'               ,,'',T
+MM,AT,1,1200,1,1,,'Stapelgruppennummer'              ,,'',Z
+MM,AT,1,1210,1,1,,'Offset x pro 2.Teil im Stapel'    ,,'mm',Z
+MM,AT,1,1220,1,1,,'Offset y pro 2.Teil im Stapel'    ,,'mm',Z
+C
+ZA,DA,1
+DA,'SHU-1',240.000,140.010,97.082,0,0,1,0.0,0.0,0.0,1,0.000,0.000,0.000,0,
+*  0,0,0,0,1,0,0,0,0,0,0,0,1,-0.000,0,-0.000,0.000,0.000,0,0,0,0,0,0.00,
+*  0.00,0.00,0.00,0,0,0,0,0,1,0,0,0.0,0.0,0.000,0,' ',' ',0,'',0,0,0,0,0,
+*  0,0,0,0,0,0,0,-0.000,0.000,'','',0,0.00,0.00
+C
+ENDE_SHEET_UNLOAD
+C
+BEGIN_PART_UNLOAD
+C
+ZA,MM,76
+MM,AT,1,  10,1,1,,'Tabellenidentifikator'            ,,'',T
+MM,AT,1,  20,1,1,,'Huellgeometrie X'                 ,,'mm',Z
+MM,AT,1,  30,1,1,,'Huellgeometrie Y'                 ,,'mm',Z
+MM,AT,1,  40,1,1,,'Offset X'                         ,,'mm',Z
+MM,AT,1,  50,1,1,,'Ausschiebeweg X'                  ,,'mm',Z
+MM,AT,1,  60,1,1,,'Ausschiebeweg Y'                  ,,'mm',Z
+MM,AT,1,  70,1,1,,'Ausschiebevorschub'               ,,'m/min',Z
+MM,AT,1,  80,1,1,,'mit Lichtschrankenueberwachung'   ,,'Bool',Z
+MM,AT,1,  90,1,1,,'mit Blasluftunterstuetzung'       ,,'Bool',Z
+MM,AT,1, 100,1,1,,'Reserviert'                       ,,'Bool',Z
+MM,AT,1, 110,1,1,,'mit definierter Klappe'           ,,'',Z
+MM,AT,1, 120,1,1,,'Klappe auf (0)/ zu (1)'           ,,'',Z
+MM,AT,1, 130,1,1,,'Handentsorgung'                   ,,'Bool',Z
+MM,AT,1, 140,1,1,,'WST im Restgitter'                ,,'Bool',Z
+MM,AT,1, 150,1,1,,'Trennen vor Oeffenen'             ,,'Bool',Z
+MM,AT,1, 160,1,1,,'Senken vor Schwenken'             ,,'Bool',Z
+MM,AT,1, 170,1,1,,'Ausschieben vor Oeffnen'          ,,'Bool',Z
+MM,AT,1, 180,1,1,,'HOELA fahren nach Trennen'        ,,'Bool',Z
+MM,AT,1, 200,1,1,,'MultiToolv. Zurueck nach Auss.'   ,,'Bool',Z
+MM,AT,1, 210,1,1,,'TRUMPF-Kennung'                   ,,'',Z
+MM,AT,1, 570,1,1,,'Kuebel Ablageort'                 ,,'',Z
+MM,AT,1, 580,1,1,,'Entladegeraet'                    ,,'',Z
+MM,AT,1, 590,1,1,,'LIFT_ENTNAHMEPOS'                 ,,'mm',Z
+MM,AT,1, 600,1,1,,'LIFT_ABLEGEORT'                   ,,'',Z
+MM,AT,1, 610,1,1,,'LIFT_OFFSET_IN_X'                 ,,'mm',Z
+MM,AT,1, 620,1,1,,'SORT_OFFSET_IN_Y'                 ,,'mm',Z
+MM,AT,1, 630,1,1,,'LIFT_MATERIALDICKE_ABLEGEN'       ,,'mm',Z
+MM,AT,1, 640,1,1,,'LIFT_SAUGERGRUPPE_1'              ,,'',Z
+MM,AT,1, 650,1,1,,'LIFT_SAUGERGRUPPE_2'              ,,'',Z
+MM,AT,1, 660,1,1,,'LIFT_SAUGERGRUPPE_3'              ,,'',Z
+MM,AT,1, 670,1,1,,'LIFT_SAUGERGRUPPE_4'              ,,'',Z
+MM,AT,1, 680,1,1,,'LIFT_SAUGERGRUPPE_5'              ,,'',Z
+MM,AT,1, 690,1,1,,'LIFT_GESCHW_LIFT'                 ,,'%',Z
+MM,AT,1, 700,1,1,,'LIFT_BESCHL_LIFT'                 ,,'%',Z
+MM,AT,1, 710,1,1,,'LIFT_GESCHW_SORT'                 ,,'%',Z
+MM,AT,1, 720,1,1,,'LIFT_BESCHL_SORT'                 ,,'%',Z
+MM,AT,1, 740,1,1,,'LZYKL_T_UNTER_WZGAUFN_ENTN'       ,,'Bool',Z
+MM,AT,1, 750,1,1,,'LZYKL_T_VON_OBEN_ABWERFEN'        ,,'Bool',Z
+MM,AT,1, 760,1,1,,'LZYKL_T_AUS_H_BL_ST_VOLL_ABWRF'   ,,'Bool',Z
+MM,AT,1, 770,1,1,,'LZYKL_T_AUSGESCHOBEN_ENTN'        ,,'Bool',Z
+MM,AT,1, 780,1,1,,'LZYKL_T_ABLEGEN'                  ,,'Bool',Z
+MM,AT,1, 790,1,1,,'LZYKL_T_UNTER_MASCHINENTISCH'     ,,'Bool',Z
+MM,AT,1, 800,1,1,,'LZYKL_TRENNHUB_EIN_MIT_VAKUUM'    ,,'Bool',Z
+MM,AT,1, 810,1,1,,'Spaeneklappe geschlossen'         ,,'Bool',Z
+MM,AT,1, 820,1,1,,'Zurueckfahren nach Ausschieben'   ,,'Bool',Z
+MM,AT,1, 830,1,1,,'Auswahl Handentnahmeart'          ,,'',Z
+MM,AT,1, 840,1,1,,'LIFT_SAUGERGRUPPE_6'              ,,'',Z
+MM,AT,1, 860,1,1,,'minimale Flaeche'                 ,,'mm2',Z
+MM,AT,1, 870,1,1,,'maximale Flaeche'                 ,,'mm2',Z
+MM,AT,1, 880,1,1,,'Saugerrahmenverschiebung Y'       ,,'mm',Z
+MM,AT,1,1000,1,1,,'Wurzeltabelle'                    ,,'',Z
+MM,AT,1,1010,1,1,,'Aussenkonturdatei'                ,,'',Z
+MM,AT,1,1020,1,1,,'Stapelgut'                        ,,'',Z
+MM,AT,1,1030,1,1,,'Zeichnungsnummer'                 ,,'',T
+MM,AT,1,1040,1,1,,'Vorg Ablegehoehe'                 ,,'mm',Z
+MM,AT,1,1050,1,1,,'Vorg Ablegeart'                   ,,'',Z
+MM,AT,1,1060,1,1,,'Vorg Ensorgegeraet'               ,,'',Z
+MM,AT,1,1070,1,1,,'umschreibendes Rechteck x'        ,,'mm',Z
+MM,AT,1,1080,1,1,,'umschreibendes Rechteck y'        ,,'mm',Z
+MM,AT,1,1090,1,1,,'Vorg Stapeldicke'                 ,,'mm',Z
+MM,AT,1,1100,1,1,,'Vorg Stapelhoehe max'             ,,'mm',Z
+MM,AT,1,1110,1,1,,'Vorg Messteilfrequenz'            ,,'',Z
+MM,AT,1,1120,1,1,,'Vorg Stueckzahl pro Stapel'       ,,'',Z
+MM,AT,1,1130,1,1,,'Vorg Palettenoffset x'            ,,'mm',Z
+MM,AT,1,1140,1,1,,'Vorg Palettenoffset y'            ,,'mm',Z
+MM,AT,1,1150,1,1,,'Vorg Entsorgeeinheit Nr'          ,,'',Z
+MM,AT,1,1160,1,1,,'Offset x Saugerrahmen Teil'       ,,'mm',Z
+MM,AT,1,1170,1,1,,'Offset y Saugerrahmen Teil'       ,,'mm',Z
+MM,AT,1,1180,1,1,,'Zeichnungsname'                   ,,'',T
+MM,AT,1,1190,1,1,,'ZeichnungsFileName'               ,,'',T
+MM,AT,1,1200,1,1,,'Stapelgruppennummer'              ,,'',Z
+MM,AT,1,1210,1,1,,'Offset x pro 2.Teil im Stapel'    ,,'mm',Z
+MM,AT,1,1220,1,1,,'Offset y pro 2.Teil im Stapel'    ,,'mm',Z
+MM,AT,1,1230,1,1,,'Freifahrgeschwindigkeit'          ,,'m/min',Z
+MM,AT,1,1240,1,1,,'Zykl. Freifahren und Klemmen'     ,,'Bool',Z
+MM,AT,1,1250,1,1,,'Zykl. Stuetztisch nach Minus Y'   ,,'Bool',Z
+C
+ZA,DA,1
+DA,'PAU-1',0.0,0.0,0.0,0.000,0.000,15.000,0,0,0,0,1,1,1,0,0,0,1,0,1,0,1,
+*  -0.000,0,-0.000,0.000,0.000,0,0,0,0,0,0.00,0.00,0.00,0.00,0,0,0,0,0,0,
+*  0,0,0,1,0,12535.5,0.0,0.000,' ',' ',0,'',0,0,0,0,0,0,0,0,0,0,0,0,
+*  -0.000,0.000,'','',0,0.00,0.00,0.00,0,0
+C
+ENDE_PART_UNLOAD
+C
+BEGIN_WZG_STAMM
+C
+ZA,MM,42
+MM,AT,1,  10,1,1,,'Maschine'                              ,,'',T
+MM,AT,1,  20,1,1,,'Identnummer'                           ,,'',T
+MM,AT,1,  30,1,1,,'Duplonummer'                           ,,'',Z
+MM,AT,1,  40,1,1,,'Stempelnummer'                         ,,'',Z
+MM,AT,1,  50,1,1,,'Magazinplatz'                          ,,'',Z
+MM,AT,1,  60,1,1,,'Werkzeugort'                           ,,'',Z
+MM,AT,1,  70,1,1,,'Index'                                 ,,'',Z
+MM,AT,1,  80,1,1,,'Werkzeugtyp'                           ,,'',Z
+MM,AT,1,  90,1,1,,'Whispertool'                           ,,'',Z
+MM,AT,1, 100,1,1,,'MultiTool'                             ,,'',Z
+MM,AT,1, 110,1,1,,'Sperrkennung'                          ,,'',Z
+MM,AT,1, 120,1,1,,'Prioritaet'                            ,,'',Z
+MM,AT,1, 130,1,1,,'Bemerkung'                             ,,'',T
+MM,AT,1, 140,1,1,,'GEWIRO-Umdrehung'                      ,,'1/min',Z
+MM,AT,1, 150,1,1,,'GEWIRO-rechts-links'                   ,,'',Z
+MM,AT,1, 160,1,1,,'Rotation'                              ,,'',Z
+MM,AT,1, 170,1,1,,'Einbauwinkellage'                      ,,'',Z
+MM,AT,1, 180,1,1,,'Werkzeugmass 1'                        ,,'mm',Z
+MM,AT,1, 190,1,1,,'Werkzeugmass 2'                        ,,'mm',Z
+MM,AT,1, 200,1,1,,'Werkzeugmass 3'                        ,,'mm',Z
+MM,AT,1, 210,1,1,,'Werkzeugmass 4'                        ,,'mm',Z
+MM,AT,1, 220,1,1,,'Werkzeugmass 5'                        ,,'mm',Z
+MM,AT,1, 230,1,1,,'Werkzeugmass 6'                        ,,'mm',Z
+MM,AT,1, 240,1,1,,'Vorschub min'                          ,,'m/min',Z
+MM,AT,1, 250,1,1,,'Vorschub max'                          ,,'m/min',Z
+MM,AT,1, 260,1,1,,'Vorschub res'                          ,,'m/min',Z
+MM,AT,1, 270,1,1,,'Hubzahl min'                           ,,'',Z
+MM,AT,1, 280,1,1,,'Hubzahl max'                           ,,'',Z
+MM,AT,1, 290,1,1,,'Hubzahl ist'                           ,,'',Z
+MM,AT,1, 300,1,1,,'Zeichnungsname'                        ,,'',T
+MM,AT,1, 310,1,1,,'Niederhaltertyp'                       ,,'',Z
+MM,AT,1, 320,1,1,,'OT-Lage Blechdicke 0.0'                ,,'mm',Z
+MM,AT,1, 330,1,1,,'TRUMPF-Kennung'                        ,,'',Z
+MM,AT,1, 340,1,1,,'Blechdicke'                            ,,'mm',Z
+MM,AT,1, 350,1,1,,'Blechdickentoleranz'                   ,,'mm',Z
+MM,AT,1, 360,1,1,,'Nachschleiflaenge'                     ,,'mm',Z
+MM,AT,1, 370,1,1,,'Langes Werkzeug'                       ,,'mm',Z
+MM,AT,1, 380,1,1,,'MT-Nullpunktversatz-X'                 ,,'mm',Z
+MM,AT,1, 390,1,1,,'MT-Nullpunktversatz-Y'                 ,,'mm',Z
+MM,AT,1, 490,1,1,,'Hardware Qualification'                ,,'',Z
+MM,AT,1, 510,1,1,,'Data Source'                           ,,'',Z
+MM,AT,1, 520,1,1,,'Customer Remark1'                      ,,'',T
+C
+ZA,DA,4
+DA,'','04125065',0,1,1,0,0,4,0,1,0,0,'Pryam 12.5x6.5mm',0.00,0,0,
+*  0.000,12.500,6.500,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0,0,0,
+*  'rechteck.wzg',0,0.000,1,0.000,0.000,0.000,0,0.000,0.000,0,0,''
+DA,'','08200120',0,1,1,0,0,8,0,1,0,0,'Oval 20x12mm',0.00,0,0,0.000,
+*  20.000,12.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0,0,0,
+*  'langloch.wzg',0,0.000,1,0.000,0.000,0.000,0,0.000,0.000,0,0,''
+DA,'','04250040',0,1,1,0,0,4,0,1,0,0,'Pryam 25x4mm',0.00,0,0,0.000,
+*  25.000,4.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0,0,0,
+*  'rechteck.wzg',0,0.000,1,0.000,0.000,0.000,0,0.000,0.000,0,0,''
+DA,'','04762051',0,1,1,0,0,4,1,1,0,0,'Pryam 76.2x5mm',0.00,0,0,0.000,
+*  76.200,5.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0,0,0,
+*  'rechteck.wzg',0,0.000,1,0.000,0.000,0.000,0,0.000,0.000,0,0,''
+C
+ENDE_WZG_STAMM
+C
+BEGIN_WZG_CALLS
+C
+ZA,MM,2
+MM,AT,1,  10,1,1,,'Werkzeugidentnummer'                   ,,'',T
+MM,AT,1,  20,1,1,,'Werkzeugaufrufnummer'                  ,,'',Z
+C
+ZA,DA,4
+DA,'04125065',1
+DA,'08200120',2
+DA,'04250040',3
+DA,'04762051',4
+C
+ENDE_WZG_CALLS
+C
+BEGIN_PARTS_IN_PROGRAM
+C
+ZA,MM,21
+MM,AT,1,  10,1,1,,'Hauptprogrammname'                     ,,'',T
+MM,AT,1,  20,1,1,,'reserviert'                            ,,'',T
+MM,AT,1,  30,1,1,,'Teil-Identnummer'                      ,,'',T
+MM,AT,1,  40,1,1,,'reserviert'                            ,,'',Z
+MM,AT,1,  50,1,1,,'Geometriefilename'                     ,,'',T
+MM,AT,1,  60,1,1,,'Anzahl'                                ,,'',Z
+MM,AT,1,  70,1,1,,'Geometriefilename (einf.Darstl)'       ,,'',T
+MM,AT,1,  80,1,1,,'Bearbeitungszeit'                      ,,'min',Z
+MM,AT,1,  90,1,1,,'Flaeche'                               ,,'mm2',Z
+MM,AT,1, 100,1,1,,'ToPs-Zeichnungskunde'                  ,,'',T
+MM,AT,1, 110,1,1,,'ToPs-Teile-Nummerierung'               ,,'',T
+MM,AT,1, 120,1,1,,'ToPs-Zeichnungsname'                   ,,'',T
+MM,AT,1, 130,1,1,,'Abmessung X'                           ,,'mm',Z
+MM,AT,1, 140,1,1,,'Abmessung Y'                           ,,'mm',Z
+MM,AT,1, 170,1,1,,'Verbuchungsteil'                       ,,'Bool',Z
+MM,AT,1, 180,1,1,,'Offset X (Urspr. zu Schwerpkt.)'       ,,'mm',Z
+MM,AT,1, 190,1,1,,'Offset Y (Urspr. zu Schwerpkt.)'       ,,'mm',Z
+MM,AT,1, 240,1,1,,'Part Type Index'                       ,,'',Z
+MM,AT,1, 250,1,1,,'AmountMirroredParts'                   ,,'',Z
+MM,AT,1, 260,1,1,,'Part Angle In File'                    ,,'deg',Z
+MM,AT,1, 500,1,1,,'TRUMPF-Kennung'                        ,,'',Z
+C
+ZA,DA,1
+DA,'2OZ_828','0','NOID_1',0,
+*  'D:\Vaskova\5›“.301.828\s = 2 oz\8›“.166.474-04.GEO',17,
+*  '8›“.166.474-04',0.46,12535.50,'none','1','',200.000,102.400,1,
+*  100.000,51.200,1,0,0.00,1
+C
+ENDE_PARTS_IN_PROGRAM
+C
+BEGIN_PARTS_IN_PROGRAM_POS
+C
+ZA,MM,17
+MM,AT,1,  10,1,1,,'laufende Nummer gefertigtes Teil'      ,,'',Z
+MM,AT,1,  20,1,1,,'Hauptprogrammname'                     ,,'',T
+MM,AT,1,  30,1,1,,'Teil-Identnummer'                      ,,'',T
+MM,AT,1,  60,1,1,,'Position X-Koordinate'                 ,,'mm',Z
+MM,AT,1,  70,1,1,,'Position Y-Koordinate'                 ,,'mm',Z
+MM,AT,1,  80,1,1,,'Abmessung in X'                        ,,'mm',Z
+MM,AT,1,  90,1,1,,'Abmessung in Y'                        ,,'mm',Z
+MM,AT,1, 100,1,1,,'Winkellage'                            ,,'deg',Z
+MM,AT,1, 150,1,1,,'X-Koordinate Schwerpunkt'              ,,'mm',Z
+MM,AT,1, 160,1,1,,'Y-Koordinate Schwerpunkt'              ,,'mm',Z
+MM,AT,1, 170,1,1,,'Name der Entladetabelle'               ,,'',T
+MM,AT,1, 180,1,1,,'Typ der Entladetabelle'                ,,'',T
+MM,AT,1, 240,1,1,,'Klassifizierung'                       ,,'',Z
+MM,AT,1, 250,1,1,,'reserviert'                            ,,'',T
+MM,AT,1, 320,1,1,,'Part Type Index'                       ,,'',Z
+MM,AT,1, 330,1,1,,'Mirrored At Y'                         ,,'Bool',Z
+MM,AT,1, 500,1,1,,'TRUMPF-Kennung'                        ,,'',Z
+C
+ZA,DA,17
+DA,1,'2OZ_828','NOID_1',238.31,482.60,200.00,102.40,0.00,338.31,
+*  533.80,'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,2,'2OZ_828','NOID_1',33.31,482.60,200.00,102.40,0.00,133.31,533.80,
+*  'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,3,'2OZ_828','NOID_1',33.31,350.20,200.00,102.40,0.00,133.31,401.40,
+*  'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,4,'2OZ_828','NOID_1',238.31,350.20,200.00,102.40,0.00,338.31,
+*  401.40,'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,5,'2OZ_828','NOID_1',443.31,350.20,200.00,102.40,0.00,543.31,
+*  401.40,'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,6,'2OZ_828','NOID_1',648.31,350.20,200.00,102.40,0.00,748.31,
+*  401.40,'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,7,'2OZ_828','NOID_1',853.31,350.20,200.00,102.40,0.00,953.31,
+*  401.40,'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,8,'2OZ_828','NOID_1',853.31,217.80,200.00,102.40,0.00,953.31,
+*  269.00,'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,9,'2OZ_828','NOID_1',648.31,217.80,200.00,102.40,0.00,748.31,
+*  269.00,'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,10,'2OZ_828','NOID_1',443.31,217.80,200.00,102.40,0.00,543.31,
+*  269.00,'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,11,'2OZ_828','NOID_1',238.31,217.80,200.00,102.40,0.00,338.31,
+*  269.00,'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,12,'2OZ_828','NOID_1',33.31,217.80,200.00,102.40,0.00,133.31,
+*  269.00,'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,13,'2OZ_828','NOID_1',33.31,90.00,200.00,102.40,0.00,133.31,141.20,
+*  'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,14,'2OZ_828','NOID_1',238.31,90.00,200.00,102.40,0.00,338.31,
+*  141.20,'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,15,'2OZ_828','NOID_1',443.31,90.00,200.00,102.40,0.00,543.31,
+*  141.20,'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,16,'2OZ_828','NOID_1',648.31,90.00,200.00,102.40,0.00,748.31,
+*  141.20,'PAU-1','PART_UNLOAD',1,'1',1,0,1
+DA,17,'2OZ_828','NOID_1',853.31,90.00,200.00,102.40,0.00,953.31,
+*  141.20,'PAU-1','PART_UNLOAD',1,'1',1,0,1
+C
+ENDE_PARTS_IN_PROGRAM_POS
+C
+BEGIN_CONSUMPTION_TIMES
+C
+ZA,MM,3
+MM,AT,1,  10,1,1,,'ConsumptionGroup'                      ,,'',Z
+MM,AT,1,  30,1,1,,'OnTime'                                ,,'s',Z
+MM,AT,1,  40,1,1,,'PartTypeIndex'                         ,,'',Z
+C
+ZA,DA,2
+DA,3,6.39,1
+DA,4,3.53,1
+C
+ENDE_CONSUMPTION_TIMES
+C
+BEGIN_TOPS_DATA
+C
+ZA,MM,10
+MM,AT,1,  10,1,1,,'LfdNr'                                 ,,'',Z
+MM,AT,1,  20,1,1,,'Typ'                                   ,,'',T
+MM,AT,1,  30,1,1,,'Datensatzname'                         ,,'',Z
+MM,AT,1,  40,1,1,,'Datensatznr'                           ,,'',Z
+MM,AT,1,  50,1,1,,'Beschreibung'                          ,,'',T
+MM,AT,1,  60,1,1,,'Datentyp'                              ,,'',T
+MM,AT,1,  70,1,1,,'physik. Einheit'                       ,,'',T
+MM,AT,1,  80,1,1,,'Wert'                                  ,,'',T
+MM,AT,1,  90,1,1,,'Referenzstueckliste'                   ,,'',T
+MM,AT,1, 100,1,1,,'Referenzdatensatz'                     ,,'',Z
+C
+ZA,DA,27
+DA,1,'INTERNAL_DATA',620,1,'','Z','','12535.50','PARTS_IN_PROGRAM',0
+DA,2,'INTERNAL_DATA',571,1,'','T','','0.45 min','',0
+DA,3,'INTERNAL_DATA',330,1,'','Z','mm','0','',0
+DA,4,'INTERNAL_DATA',340,1,'','Z','','0','',0
+DA,5,'INTERNAL_DATA',280,1,'','Z','mm','0','',0
+DA,6,'INTERNAL_DATA',650,1,'','T','','TruPunch 1000 (S05)','',0
+DA,7,'INTERNAL_DATA',120,1,'','Z','mm','2','',0
+DA,8,'INTERNAL_DATA',101,1,'','T','','0 : 07 : 47 [˜:ÏËÌ:Ò]','',0
+DA,9,'INTERNAL_DATA',100,1,'','T','','7.79 [min] ','',0
+DA,10,'INTERNAL_DATA',102,1,'','T','','','',0
+DA,11,'INTERNAL_DATA',103,1,'','T','','0 : 07 : 47 [h:min:s]','',0
+DA,12,'INTERNAL_DATA',640,1,'','Z','mm','1066.41','',0
+DA,13,'INTERNAL_DATA',641,1,'','Z','mm','516.516','',0
+DA,14,'INTERNAL_DATA',40,1,'','T','','3       7       9       ','',0
+DA,15,'INTERNAL_DATA',700,1,'','T','','','',0
+DA,16,'INTERNAL_DATA',30,1,'','T','','1 —À≈¬¿','',0
+DA,17,'INTERNAL_DATA',50,1,'','T','','','',0
+DA,18,'INTERNAL_DATA',110,1,'','T','','','',0
+DA,19,'INTERNAL_DATA',540,1,'','Z','','170','',0
+DA,20,'INTERNAL_DATA',540,2,'','Z','','272','',0
+DA,21,'INTERNAL_DATA',540,3,'','Z','','68','',0
+DA,22,'INTERNAL_DATA',540,4,'','Z','','178','',0
+DA,23,'INTERNAL_DATA',440,1,'','Z','','71.5862','',0
+DA,24,'INTERNAL_DATA',90,1,'','Z','','27.48','',0
+DA,25,'INTERNAL_DATA',600,1,'','T','','BMP','',0
+DA,26,'INTERNAL_DATA',610,1,'','T','','BMP','',0
+DA,27,'INTERNAL_DATA',660,1,'','T','','ru','',0
+C
+ENDE_TOPS_DATA
+C
+BEGIN_PROGRAMM
+C
+ZA,MM,7
+MM,AT,1,  10,1,1,,'Programmnummer'                        ,,'',T
+MM,AT,1,  20,1,1,,'Programmtyp'                           ,,'',T
+MM,AT,1,  30,1,1,,'Bemerkung'                             ,,'',T
+MM,AT,1,  40,1,1,,'Bearbeitungszeit'                      ,,'min',Z
+MM,AT,1,  50,1,1,,'Dateityp'                              ,,'',T
+MM,AT,1,  60,1,1,,'IncreasingRecordNumberFlag'            ,,'Bool',Z
+MM,AT,1,  70,1,1,,'PartTypeIndex'                         ,,'',Z
+C
+ZA,DA,1
+DA,'2OZ_828','HP','2oz_828',7.79,'LST',1,0
+START_TEXT
+N10MSG("ÕŒÃ≈– √À¿¬ÕŒ… œ–Œ√–¿ÃÃ€,2OZ_828" )
+N20MSG("√¿¡¿–»“€ À»—“Œ¬Œ… «¿√Œ“Œ¬ »: 2.00 X 1250 X 600 ")
+N30MSG("ID Ã¿“≈–»¿À¿: OZ-20 ")
+N40;(V:07.00.02#B:432#D:20090918#P:TruTops_Punch_EXE)
+N50;(V:07.00.01#B:503#D:20090921#P:TruTops_Punch_DB)
+N60;(    À»—“¿:D:\Vaskova\5›“.301.828\s = 2 oz\2oz_828.LST)
+N70;(»Ãﬂ “–¿Õ—‘≈–¿:2OZ_828.LST œ–Œ√ŒÕ€ œ–Œ√–¿ÃÃ€:1)
+N80;(—“¿ÕŒ :TC1000R “»œ:2)
+N90;(—»—“≈Ã¿ ”œ–¿¬À≈Õ»ﬂ:Bo PNC-P ¬≈–—»ﬂ:1)
+N100;(ƒ¿“¿:22.05.2019 ¬–≈Ãﬂ:22:23:45)
+N110MSG(" *** Pryam 12.5x6.5mm--12.50--6.50 *** ")
+N120MSG(" *** Oval 20x12mm--20.00--12.00 *** ")
+N130MSG(" *** Pryam 25x4mm--25.00--4.00 *** ")
+N140MSG(" *** Pryam 76.2x5mm--76.20--5.00 *** ")
+N150TRAILON(C2,C1)
+N160G71
+N170G01F97082
+N180TC_SUCTION_OFF
+N190TC_CLAMP_CYC
+N200MSG("Õ”À≈¬¿ﬂ “Œ◊ ¿ 0 0" )
+N210MSG("¬—“¿¬»“‹ À»—“Œ¬”ﬁ «¿√Œ“Œ¬ ” ")
+N220TC_SHEET_TECH("SHT-1")
+N230TC_SHEET_LOAD("SHL-1")
+N240;GOTOF ENTRY_PUNCH
+N250;ENTRY_PUNCH:
+N260MSG("»Õ—“–. œ–ﬂÃŒ”√ŒÀ‹Õ» ,X=12.50,Y=6.50")
+N270TC_TOOL_NO ("04125065")
+N280TC_TOOL_CHANGE
+N290TC_TOOL_TECH("PTT-1")
+N300PUNCH_ON
+N310G01X33.511Y90.202C1=DC(315)
+N320X83.107Y90.202C1=DC(45)
+N330X58.309Y141.2C1=DC(0)
+N340X33.511Y192.198C1=DC(45)
+N350X83.107Y192.198C1=DC(135)
+N360X83.107Y218.002C1=DC(225)
+N370X33.511Y218.002C1=DC(315)
+N380X58.309Y269C1=DC(0)
+N390X83.107Y319.998C1=DC(315)
+N400X33.511Y319.998C1=DC(45)
+N410X33.511Y350.402C1=DC(135)
+N420X83.107Y350.402C1=DC(225)
+N430X58.309Y401.4C1=DC(180)
+N440X33.511Y452.398C1=DC(225)
+N450X83.107Y452.398C1=DC(315)
+N460X83.107Y482.802C1=DC(45)
+N470X33.511Y482.802C1=DC(135)
+N480X58.309Y533.8C1=DC(180)
+N490X33.511Y584.798C1=DC(225)
+N500X83.107Y584.798C1=DC(315)
+N510X183.511Y584.798C1=DC(45)
+N520X233.107Y584.798C1=DC(135)
+N530X238.511Y584.798C1=DC(225)
+N540X288.107Y584.798C1=DC(315)
+N550X388.511Y584.798C1=DC(45)
+N560X438.107Y584.798C1=DC(135)
+N570X413.309Y533.8C1=DC(180)
+N580X263.309Y533.8
+N590X208.309Y533.8
+N600X183.511Y482.802C1=DC(135)
+N610X183.511Y452.398C1=DC(225)
+N620X233.107Y452.398C1=DC(315)
+N630X238.511Y452.398C1=DC(45)
+N640X233.107Y482.802
+N650X238.511Y482.802C1=DC(135)
+N660X288.107Y482.802C1=DC(225)
+N670X288.107Y452.398C1=DC(315)
+N680X388.511Y452.398C1=DC(45)
+N690X388.511Y482.802C1=DC(135)
+N700X438.107Y482.802C1=DC(225)
+N710X438.107Y452.398C1=DC(315)
+N720X443.511Y452.398C1=DC(45)
+N730X493.107Y452.398C1=DC(135)
+N740X593.511Y452.398C1=DC(225)
+N750X643.107Y452.398C1=DC(315)
+N760X648.511Y452.398C1=DC(45)
+N770X698.107Y452.398C1=DC(135)
+N780X798.511Y452.398C1=DC(225)
+N790X848.107Y452.398C1=DC(315)
+N800X853.511Y452.398C1=DC(45)
+N810X903.107Y452.398C1=DC(135)
+N820X1003.511Y452.398C1=DC(225)
+N830X1053.107Y452.398C1=DC(315)
+N840X1028.309Y401.4C1=DC(0)
+N850X878.309Y401.4
+N860X823.309Y401.4
+N870X673.309Y401.4
+N880X618.309Y401.4
+N890X468.309Y401.4
+N900X413.309Y401.4
+N910X263.309Y401.4
+N920X208.309Y401.4
+N930X183.511Y350.402C1=DC(315)
+N940X233.107Y350.402C1=DC(45)
+N950X238.511Y350.402C1=DC(135)
+N960X288.107Y350.402C1=DC(225)
+N970X388.511Y350.402C1=DC(315)
+N980X438.107Y350.402C1=DC(45)
+N990X443.511Y350.402C1=DC(135)
+N1000X493.107Y350.402C1=DC(225)
+N1010X593.511Y350.402C1=DC(315)
+N1020X643.107Y350.402C1=DC(45)
+N1030X648.511Y350.402C1=DC(135)
+N1040X698.107Y350.402C1=DC(225)
+N1050X798.511Y350.402C1=DC(315)
+N1060X848.107Y350.402C1=DC(45)
+N1070X853.511Y350.402C1=DC(135)
+N1080X903.107Y350.402C1=DC(225)
+N1090X1003.511Y350.402C1=DC(315)
+N1100X1053.107Y350.402C1=DC(45)
+N1110X1053.107Y319.998C1=DC(135)
+N1120X1003.511Y319.998C1=DC(225)
+N1130X903.107Y319.998C1=DC(315)
+N1140X853.511Y319.998C1=DC(45)
+N1150X848.107Y319.998C1=DC(135)
+N1160X798.511Y319.998C1=DC(225)
+N1170X698.107Y319.998C1=DC(315)
+N1180X648.511Y319.998C1=DC(45)
+N1190X643.107Y319.998C1=DC(135)
+N1200X593.511Y319.998C1=DC(225)
+N1210X493.107Y319.998C1=DC(315)
+N1220X443.511Y319.998C1=DC(45)
+N1230X438.107Y319.998C1=DC(135)
+N1240X388.511Y319.998C1=DC(225)
+N1250X288.107Y319.998C1=DC(315)
+N1260X238.511Y319.998C1=DC(45)
+N1270X233.107Y319.998C1=DC(135)
+N1280X183.511Y319.998C1=DC(225)
+N1290X208.309Y269C1=DC(180)
+N1300X263.309Y269
+N1310X413.309Y269
+N1320X468.309Y269
+N1330X618.309Y269
+N1340X673.309Y269
+N1350X823.309Y269
+N1360X878.309Y269
+N1370X1028.309Y269
+N1380X1053.107Y218.002C1=DC(225)
+N1390X1003.511Y218.002C1=DC(315)
+N1400X903.107Y218.002C1=DC(45)
+N1410X853.511Y218.002C1=DC(135)
+N1420X848.107Y218.002C1=DC(225)
+N1430X798.511Y218.002C1=DC(315)
+N1440X698.107Y218.002C1=DC(45)
+N1450X648.511Y218.002C1=DC(135)
+N1460X643.107Y218.002C1=DC(225)
+N1470X593.511Y218.002C1=DC(315)
+N1480X493.107Y218.002C1=DC(45)
+N1490X443.511Y218.002C1=DC(135)
+N1500X438.107Y218.002C1=DC(225)
+N1510X388.511Y218.002C1=DC(315)
+N1520X288.107Y218.002C1=DC(45)
+N1530X238.511Y218.002C1=DC(135)
+N1540X233.107Y218.002C1=DC(225)
+N1550X183.511Y218.002C1=DC(315)
+N1560X183.511Y192.198C1=DC(45)
+N1570X233.107Y192.198C1=DC(135)
+N1580X238.511Y192.198C1=DC(225)
+N1590X288.107Y192.198C1=DC(315)
+N1600X388.511Y192.198C1=DC(45)
+N1610X438.107Y192.198C1=DC(135)
+N1620X443.511Y192.198C1=DC(225)
+N1630X493.107Y192.198C1=DC(315)
+N1640X593.511Y192.198C1=DC(45)
+N1650X643.107Y192.198C1=DC(135)
+N1660X648.511Y192.198C1=DC(225)
+N1670X698.107Y192.198C1=DC(315)
+N1680X798.511Y192.198C1=DC(45)
+N1690X848.107Y192.198C1=DC(135)
+N1700X853.511Y192.198C1=DC(225)
+N1710X903.107Y192.198C1=DC(315)
+N1720X1003.511Y192.198C1=DC(45)
+N1730X1053.107Y192.198C1=DC(135)
+N1740X1028.309Y141.2C1=DC(180)
+N1750X878.309Y141.2
+N1760X823.309Y141.2
+N1770X673.309Y141.2
+N1780X618.309Y141.2
+N1790X468.309Y141.2
+N1800X413.309Y141.2
+N1810X263.309Y141.2
+N1820X208.309Y141.2
+N1830X183.511Y90.202C1=DC(135)
+N1840X233.107Y90.202C1=DC(225)
+N1850X238.511Y90.202C1=DC(315)
+N1860X288.107Y90.202C1=DC(45)
+N1870X388.511Y90.202C1=DC(135)
+N1880X438.107Y90.202C1=DC(225)
+N1890X443.511Y90.202C1=DC(315)
+N1900X493.107Y90.202C1=DC(45)
+N1910X593.511Y90.202C1=DC(135)
+N1920X643.107Y90.202C1=DC(225)
+N1930X648.511Y90.202C1=DC(315)
+N1940X698.107Y90.202C1=DC(45)
+N1950X798.511Y90.202C1=DC(135)
+N1960X848.107Y90.202C1=DC(225)
+N1970X853.511Y90.202C1=DC(315)
+N1980X903.107Y90.202C1=DC(45)
+N1990X1003.511Y90.202C1=DC(135)
+N2000X1053.107Y90.202C1=DC(225)
+N2010PUNCH_OFF
+N2020;ENTRY_PUNCH:
+N2030MSG("»Õ—“–. ”ƒÀ»Õ. Œ“¬≈–—“»≈,X=20.00,Y=12.00")
+N2040TC_TOOL_NO ("08200120")
+N2050TC_TOOL_CHANGE
+N2060TC_TOOL_TECH("PTT-2")
+N2070PUNCH_ON
+N2080G01X52.309Y100C1=DC(0)
+N2090X52.309Y100
+N2100X58.117Y100
+N2110X64.309Y100
+N2120X64.309Y182.4
+N2130X58.117Y182.4
+N2140X52.309Y182.4
+N2150X52.309Y182.4
+N2160X52.309Y227.8
+N2170X52.309Y227.8
+N2180X58.117Y227.8
+N2190X64.309Y227.8
+N2200X64.309Y310.2
+N2210X58.117Y310.2
+N2220X52.309Y310.2
+N2230X52.309Y310.2
+N2240X52.309Y360.2
+N2250X52.309Y360.2
+N2260X58.117Y360.2
+N2270X64.309Y360.2
+N2280X64.309Y442.6
+N2290X58.117Y442.6
+N2300X52.309Y442.6
+N2310X52.309Y442.6
+N2320X52.309Y492.6
+N2330X52.309Y492.6
+N2340X58.118Y492.6
+N2350X64.309Y492.6
+N2360X64.309Y575
+N2370X58.118Y575
+N2380X52.309Y575
+N2390X52.309Y575
+N2400X202.309Y575
+N2410X202.309Y575
+N2420X208.118Y575
+N2430X214.309Y575
+N2440X257.309Y575
+N2450X257.309Y575
+N2460X263.117Y575
+N2470X269.309Y575
+N2480X407.309Y575
+N2490X407.309Y575
+N2500X413.117Y575
+N2510X419.309Y575
+N2520X419.309Y492.6
+N2530X413.117Y492.6
+N2540X407.309Y492.6
+N2550X407.309Y492.6
+N2560X269.309Y492.6
+N2570X263.117Y492.6
+N2580X257.309Y492.6
+N2590X257.309Y492.6
+N2600X214.309Y492.6
+N2610X208.118Y492.6
+N2620X202.309Y492.6
+N2630X202.309Y492.6
+N2640X202.309Y442.6
+N2650X202.309Y442.6
+N2660X208.117Y442.6
+N2670X214.309Y442.6
+N2680X257.309Y442.6
+N2690X257.309Y442.6
+N2700X263.117Y442.6
+N2710X269.309Y442.6
+N2720X407.309Y442.6
+N2730X407.309Y442.6
+N2740X413.117Y442.6
+N2750X419.309Y442.6
+N2760X462.309Y442.6
+N2770X462.309Y442.6
+N2780X468.117Y442.6
+N2790X474.309Y442.6
+N2800X612.309Y442.6
+N2810X612.309Y442.6
+N2820X618.117Y442.6
+N2830X624.309Y442.6
+N2840X667.309Y442.6
+N2850X667.309Y442.6
+N2860X673.117Y442.6
+N2870X679.309Y442.6
+N2880X817.309Y442.6
+N2890X817.309Y442.6
+N2900X823.117Y442.6
+N2910X829.309Y442.6
+N2920X872.309Y442.6
+N2930X872.309Y442.6
+N2940X878.117Y442.6
+N2950X884.309Y442.6
+N2960X1022.309Y442.6
+N2970X1022.309Y442.6
+N2980X1028.117Y442.6
+N2990X1034.309Y442.6
+N3000X1034.309Y360.2
+N3010X1028.117Y360.2
+N3020X1022.309Y360.2
+N3030X1022.309Y360.2
+N3040X884.309Y360.2
+N3050X878.117Y360.2
+N3060X872.309Y360.2
+N3070X872.309Y360.2
+N3080X829.309Y360.2
+N3090X823.117Y360.2
+N3100X817.309Y360.2
+N3110X817.309Y360.2
+N3120X679.309Y360.2
+N3130X673.117Y360.2
+N3140X667.309Y360.2
+N3150X667.309Y360.2
+N3160X624.309Y360.2
+N3170X618.117Y360.2
+N3180X612.309Y360.2
+N3190X612.309Y360.2
+N3200X474.309Y360.2
+N3210X468.117Y360.2
+N3220X462.309Y360.2
+N3230X462.309Y360.2
+N3240X419.309Y360.2
+N3250X413.117Y360.2
+N3260X407.309Y360.2
+N3270X407.309Y360.2
+N3280X269.309Y360.2
+N3290X263.117Y360.2
+N3300X257.309Y360.2
+N3310X257.309Y360.2
+N3320X214.309Y360.2
+N3330X208.117Y360.2
+N3340X202.309Y360.2
+N3350X202.309Y360.2
+N3360X202.309Y310.2
+N3370X202.309Y310.2
+N3380X208.117Y310.2
+N3390X214.309Y310.2
+N3400X257.309Y310.2
+N3410X257.309Y310.2
+N3420X263.117Y310.2
+N3430X269.309Y310.2
+N3440X407.309Y310.2
+N3450X407.309Y310.2
+N3460X413.117Y310.2
+N3470X419.309Y310.2
+N3480X462.309Y310.2
+N3490X462.309Y310.2
+N3500X468.117Y310.2
+N3510X474.309Y310.2
+N3520X612.309Y310.2
+N3530X612.309Y310.2
+N3540X618.117Y310.2
+N3550X624.309Y310.2
+N3560X667.309Y310.2
+N3570X667.309Y310.2
+N3580X673.117Y310.2
+N3590X679.309Y310.2
+N3600X817.309Y310.2
+N3610X817.309Y310.2
+N3620X823.117Y310.2
+N3630X829.309Y310.2
+N3640X872.309Y310.2
+N3650X872.309Y310.2
+N3660X878.117Y310.2
+N3670X884.309Y310.2
+N3680X1022.309Y310.2
+N3690X1022.309Y310.2
+N3700X1028.117Y310.2
+N3710X1034.309Y310.2
+N3720X1034.309Y227.8
+N3730X1028.117Y227.8
+N3740X1022.309Y227.8
+N3750X1022.309Y227.8
+N3760X884.309Y227.8
+N3770X878.117Y227.8
+N3780X872.309Y227.8
+N3790X872.309Y227.8
+N3800X829.309Y227.8
+N3810X823.117Y227.8
+N3820X817.309Y227.8
+N3830X817.309Y227.8
+N3840X679.309Y227.8
+N3850X673.117Y227.8
+N3860X667.309Y227.8
+N3870X667.309Y227.8
+N3880X624.309Y227.8
+N3890X618.117Y227.8
+N3900X612.309Y227.8
+N3910X612.309Y227.8
+N3920X474.309Y227.8
+N3930X468.117Y227.8
+N3940X462.309Y227.8
+N3950X462.309Y227.8
+N3960X419.309Y227.8
+N3970X413.117Y227.8
+N3980X407.309Y227.8
+N3990X407.309Y227.8
+N4000X269.309Y227.8
+N4010X263.117Y227.8
+N4020X257.309Y227.8
+N4030X257.309Y227.8
+N4040X214.309Y227.8
+N4050X208.117Y227.8
+N4060X202.309Y227.8
+N4070X202.309Y227.8
+N4080X202.309Y182.4
+N4090X202.309Y182.4
+N4100X208.117Y182.4
+N4110X214.309Y182.4
+N4120X257.309Y182.4
+N4130X257.309Y182.4
+N4140X263.117Y182.4
+N4150X269.309Y182.4
+N4160X407.309Y182.4
+N4170X407.309Y182.4
+N4180X413.117Y182.4
+N4190X419.309Y182.4
+N4200X462.309Y182.4
+N4210X462.309Y182.4
+N4220X468.118Y182.4
+N4230X474.309Y182.4
+N4240X612.309Y182.4
+N4250X612.309Y182.4
+N4260X618.118Y182.4
+N4270X624.309Y182.4
+N4280X667.309Y182.4
+N4290X667.309Y182.4
+N4300X673.118Y182.4
+N4310X679.309Y182.4
+N4320X817.309Y182.4
+N4330X817.309Y182.4
+N4340X823.118Y182.4
+N4350X829.309Y182.4
+N4360X872.309Y182.4
+N4370X872.309Y182.4
+N4380X878.118Y182.4
+N4390X884.309Y182.4
+N4400X1022.309Y182.4
+N4410X1022.309Y182.4
+N4420X1028.118Y182.4
+N4430X1034.309Y182.4
+N4440X1034.309Y100
+N4450X1028.118Y100
+N4460X1022.309Y100
+N4470X1022.309Y100
+N4480X884.309Y100
+N4490X878.118Y100
+N4500X872.309Y100
+N4510X872.309Y100
+N4520X829.309Y100
+N4530X823.118Y100
+N4540X817.309Y100
+N4550X817.309Y100
+N4560X679.309Y100
+N4570X673.118Y100
+N4580X667.309Y100
+N4590X667.309Y100
+N4600X624.309Y100
+N4610X618.118Y100
+N4620X612.309Y100
+N4630X612.309Y100
+N4640X474.309Y100
+N4650X468.118Y100
+N4660X462.309Y100
+N4670X462.309Y100
+N4680X419.309Y100
+N4690X413.117Y100
+N4700X407.309Y100
+N4710X407.309Y100
+N4720X269.309Y100
+N4730X263.117Y100
+N4740X257.309Y100
+N4750X257.309Y100
+N4760X214.309Y100
+N4770X208.117Y100
+N4780X202.309Y100
+N4790X202.309Y100
+N4800PUNCH_OFF
+N4810;ENTRY_PUNCH:
+N4820MSG("»Õ—“–. œ–ﬂÃŒ”√ŒÀ‹Õ» ,X=25.00,Y=4.00")
+N4830TC_TOOL_NO ("04250040")
+N4840TC_TOOL_CHANGE
+N4850TC_TOOL_TECH("PTT-3")
+N4860PUNCH_ON
+N4870G01X85.309Y105.59C1=DC(90)
+N4880X85.309Y175.716
+N4890X85.309Y233.39
+N4900X85.309Y303.516
+N4910X85.309Y365.79
+N4920X85.309Y435.916
+N4930X85.309Y498.19
+N4940X85.309Y568.316
+N4950X181.309Y568.341
+N4960X290.309Y568.316
+N4970X386.309Y568.341
+N4980X386.309Y498.343
+N4990X290.309Y498.19
+N5000X181.309Y498.343
+N5010X181.309Y435.941
+N5020X290.309Y435.916
+N5030X386.309Y435.941
+N5040X495.309Y435.916
+N5050X591.309Y435.941
+N5060X700.309Y435.915
+N5070X796.309Y435.94
+N5080X905.309Y435.916
+N5090X1001.309Y435.941
+N5100X1001.309Y365.943
+N5110X905.309Y365.79
+N5120X796.309Y365.943
+N5130X700.309Y365.79
+N5140X591.309Y365.943
+N5150X495.309Y365.79
+N5160X386.309Y365.943
+N5170X290.309Y365.79
+N5180X181.309Y365.943
+N5190X181.309Y303.541
+N5200X290.309Y303.516
+N5210X386.309Y303.541
+N5220X495.309Y303.516
+N5230X591.309Y303.541
+N5240X700.309Y303.515
+N5250X796.309Y303.54
+N5260X905.309Y303.516
+N5270X1001.309Y303.541
+N5280X1001.309Y233.543
+N5290X905.309Y233.39
+N5300X796.309Y233.543
+N5310X700.309Y233.39
+N5320X591.309Y233.543
+N5330X495.309Y233.39
+N5340X386.309Y233.543
+N5350X290.309Y233.39
+N5360X181.309Y233.543
+N5370X181.309Y175.741
+N5380X290.309Y175.716
+N5390X386.309Y175.741
+N5400X495.309Y175.716
+N5410X591.309Y175.741
+N5420X700.309Y175.716
+N5430X796.309Y175.741
+N5440X905.309Y175.716
+N5450X1001.309Y175.741
+N5460X1001.309Y105.743
+N5470X905.309Y105.59
+N5480X796.309Y105.743
+N5490X700.309Y105.59
+N5500X591.309Y105.743
+N5510X495.309Y105.59
+N5520X386.309Y105.743
+N5530X290.309Y105.59
+N5540X181.309Y105.743
+N5550PUNCH_OFF
+N5560;ENTRY_PUNCH:
+N5570MSG("»Õ—“–. œ–ﬂÃŒ”√ŒÀ‹Õ» ,X=76.20,Y=5.00")
+N5580TC_TOOL_NO ("04762051")
+N5590TC_TOOL_CHANGE
+N5600TC_TOOL_TECH("PTT-4")
+N5610G01X440.809Y523.7C1=DC(90)
+N5620NIBBLE_ON
+N5630SPP=74.2
+N5640Y543.9
+N5650NIBBLE_OFF
+N5660X235.809C1=DC(90)
+N5670NIBBLE_ON
+N5680SPP=74.2
+N5690Y523.7
+N5700NIBBLE_OFF
+N5710X30.809C1=DC(90)
+N5720NIBBLE_ON
+N5730SPP=74.2
+N5740Y543.9
+N5750NIBBLE_OFF
+N5760PUNCH_ON
+N5770X58.309Y587.5C1=DC(180)
+N5780PUNCH_OFF
+N5790X121.409Y556.05C1=DC(180)
+N5800NIBBLE_ON
+N5810SPP=74.2
+N5820X145.209
+N5830NIBBLE_OFF
+N5840PUNCH_ON
+N5850X208.309Y587.5
+N5860X263.309Y587.5
+N5870PUNCH_OFF
+N5880X326.409Y556.05C1=DC(180)
+N5890NIBBLE_ON
+N5900SPP=74.2
+N5910X350.209
+N5920NIBBLE_OFF
+N5930PUNCH_ON
+N5940X413.309Y587.5
+N5950X413.309Y480.1
+N5960PUNCH_OFF
+N5970X350.209Y511.55C1=DC(180)
+N5980NIBBLE_ON
+N5990SPP=74.2
+N6000X326.409
+N6010NIBBLE_OFF
+N6020X263.309Y480.1C1=DC(180)
+N6030TC_PART_UNLOAD("PAU-1")
+N6040PUNCH_ON
+N6050X208.309Y480.1
+N6060PUNCH_OFF
+N6070X145.209Y511.55C1=DC(180)
+N6080NIBBLE_ON
+N6090SPP=74.2
+N6100X121.409
+N6110NIBBLE_OFF
+N6120X58.309Y480.1C1=DC(180)
+N6130TC_PART_UNLOAD("PAU-1")
+N6140X30.809Y411.5C1=DC(270)
+N6150NIBBLE_ON
+N6160SPP=74.2
+N6170Y391.3
+N6180NIBBLE_OFF
+N6190X235.809C1=DC(270)
+N6200NIBBLE_ON
+N6210SPP=74.2
+N6220Y411.5
+N6230NIBBLE_OFF
+N6240X440.809C1=DC(270)
+N6250NIBBLE_ON
+N6260SPP=74.2
+N6270Y391.3
+N6280NIBBLE_OFF
+N6290X645.809C1=DC(270)
+N6300NIBBLE_ON
+N6310SPP=74.2
+N6320Y411.5
+N6330NIBBLE_OFF
+N6340X850.809C1=DC(270)
+N6350NIBBLE_ON
+N6360SPP=74.2
+N6370Y391.3
+N6380NIBBLE_OFF
+N6390X1055.809C1=DC(270)
+N6400NIBBLE_ON
+N6410SPP=74.2
+N6420Y411.5
+N6430NIBBLE_OFF
+N6440PUNCH_ON
+N6450X1028.309Y455.1C1=DC(0)
+N6460PUNCH_OFF
+N6470X965.209Y423.65C1=DC(0)
+N6480NIBBLE_ON
+N6490SPP=74.2
+N6500X941.409
+N6510NIBBLE_OFF
+N6520PUNCH_ON
+N6530X878.309Y455.1
+N6540X823.309Y455.1
+N6550PUNCH_OFF
+N6560X760.209Y423.65C1=DC(0)
+N6570NIBBLE_ON
+N6580SPP=74.2
+N6590X736.409
+N6600NIBBLE_OFF
+N6610PUNCH_ON
+N6620X673.309Y455.1
+N6630X618.309Y455.1
+N6640PUNCH_OFF
+N6650X555.209Y423.65C1=DC(0)
+N6660NIBBLE_ON
+N6670SPP=74.2
+N6680X531.409
+N6690NIBBLE_OFF
+N6700PUNCH_ON
+N6710X468.309Y455.1
+N6720X413.309Y455.1
+N6730PUNCH_OFF
+N6740X350.209Y423.65C1=DC(0)
+N6750NIBBLE_ON
+N6760SPP=74.2
+N6770X326.409
+N6780NIBBLE_OFF
+N6790PUNCH_ON
+N6800X263.309Y455.1
+N6810X208.309Y455.1
+N6820PUNCH_OFF
+N6830X145.209Y423.65C1=DC(0)
+N6840NIBBLE_ON
+N6850SPP=74.2
+N6860X121.409
+N6870NIBBLE_OFF
+N6880PUNCH_ON
+N6890X58.309Y455.1
+N6900X58.309Y347.7
+N6910PUNCH_OFF
+N6920X121.409Y379.15C1=DC(0)
+N6930NIBBLE_ON
+N6940SPP=74.2
+N6950X145.209
+N6960NIBBLE_OFF
+N6970X208.309Y347.7C1=DC(0)
+N6980TC_PART_UNLOAD("PAU-1")
+N6990PUNCH_ON
+N7000X263.309Y347.7
+N7010PUNCH_OFF
+N7020X326.409Y379.15C1=DC(0)
+N7030NIBBLE_ON
+N7040SPP=74.2
+N7050X350.209
+N7060NIBBLE_OFF
+N7070X413.309Y347.7C1=DC(0)
+N7080TC_PART_UNLOAD("PAU-1")
+N7090PUNCH_ON
+N7100X468.309Y347.7
+N7110PUNCH_OFF
+N7120X531.409Y379.15C1=DC(0)
+N7130NIBBLE_ON
+N7140SPP=74.2
+N7150X555.209
+N7160NIBBLE_OFF
+N7170X618.309Y347.7C1=DC(0)
+N7180TC_PART_UNLOAD("PAU-1")
+N7190PUNCH_ON
+N7200X673.309Y347.7
+N7210PUNCH_OFF
+N7220X736.409Y379.15C1=DC(0)
+N7230NIBBLE_ON
+N7240SPP=74.2
+N7250X760.209
+N7260NIBBLE_OFF
+N7270X823.309Y347.7C1=DC(0)
+N7280TC_PART_UNLOAD("PAU-1")
+N7290PUNCH_ON
+N7300X878.309Y347.7
+N7310PUNCH_OFF
+N7320X941.409Y379.15C1=DC(0)
+N7330NIBBLE_ON
+N7340SPP=74.2
+N7350X965.209
+N7360NIBBLE_OFF
+N7370X1028.309Y347.7C1=DC(0)
+N7380TC_PART_UNLOAD("PAU-1")
+N7390X1055.809Y279.1C1=DC(90)
+N7400NIBBLE_ON
+N7410SPP=74.2
+N7420Y258.9
+N7430NIBBLE_OFF
+N7440X850.809Y279.1C1=DC(90)
+N7450NIBBLE_ON
+N7460SPP=74.2
+N7470Y258.9
+N7480NIBBLE_OFF
+N7490X645.809Y279.1C1=DC(90)
+N7500NIBBLE_ON
+N7510SPP=74.2
+N7520Y258.9
+N7530NIBBLE_OFF
+N7540X440.809Y279.1C1=DC(90)
+N7550NIBBLE_ON
+N7560SPP=74.2
+N7570Y258.9
+N7580NIBBLE_OFF
+N7590X235.809Y279.1C1=DC(90)
+N7600NIBBLE_ON
+N7610SPP=74.2
+N7620Y258.9
+N7630NIBBLE_OFF
+N7640X30.809Y279.1C1=DC(90)
+N7650NIBBLE_ON
+N7660SPP=74.2
+N7670Y258.9
+N7680NIBBLE_OFF
+N7690PUNCH_ON
+N7700X58.309Y322.7C1=DC(180)
+N7710PUNCH_OFF
+N7720X121.409Y291.25C1=DC(180)
+N7730NIBBLE_ON
+N7740SPP=74.2
+N7750X145.209
+N7760NIBBLE_OFF
+N7770PUNCH_ON
+N7780X208.309Y322.7
+N7790X263.309Y322.7
+N7800PUNCH_OFF
+N7810X326.409Y291.25C1=DC(180)
+N7820NIBBLE_ON
+N7830SPP=74.2
+N7840X350.209
+N7850NIBBLE_OFF
+N7860PUNCH_ON
+N7870X413.309Y322.7
+N7880X468.309Y322.7
+N7890PUNCH_OFF
+N7900X531.409Y291.25C1=DC(180)
+N7910NIBBLE_ON
+N7920SPP=74.2
+N7930X555.209
+N7940NIBBLE_OFF
+N7950PUNCH_ON
+N7960X618.309Y322.7
+N7970X673.309Y322.7
+N7980PUNCH_OFF
+N7990X736.409Y291.25C1=DC(180)
+N8000NIBBLE_ON
+N8010SPP=74.2
+N8020X760.209
+N8030NIBBLE_OFF
+N8040PUNCH_ON
+N8050X823.309Y322.7
+N8060X878.309Y322.7
+N8070PUNCH_OFF
+N8080X941.409Y291.25C1=DC(180)
+N8090NIBBLE_ON
+N8100SPP=74.2
+N8110X965.209
+N8120NIBBLE_OFF
+N8130PUNCH_ON
+N8140X1028.309Y322.7
+N8150X1028.309Y215.3
+N8160PUNCH_OFF
+N8170X965.209Y246.75C1=DC(180)
+N8180NIBBLE_ON
+N8190SPP=74.2
+N8200X941.409
+N8210NIBBLE_OFF
+N8220X878.309Y215.3C1=DC(180)
+N8230TC_PART_UNLOAD("PAU-1")
+N8240PUNCH_ON
+N8250X823.309Y215.3
+N8260PUNCH_OFF
+N8270X760.209Y246.75C1=DC(180)
+N8280NIBBLE_ON
+N8290SPP=74.2
+N8300X736.409
+N8310NIBBLE_OFF
+N8320X673.309Y215.3C1=DC(180)
+N8330TC_PART_UNLOAD("PAU-1")
+N8340PUNCH_ON
+N8350X618.309Y215.3
+N8360PUNCH_OFF
+N8370X555.209Y246.75C1=DC(180)
+N8380NIBBLE_ON
+N8390SPP=74.2
+N8400X531.409
+N8410NIBBLE_OFF
+N8420X468.309Y215.3C1=DC(180)
+N8430TC_PART_UNLOAD("PAU-1")
+N8440PUNCH_ON
+N8450X413.309Y215.3
+N8460PUNCH_OFF
+N8470X350.209Y246.75C1=DC(180)
+N8480NIBBLE_ON
+N8490SPP=74.2
+N8500X326.409
+N8510NIBBLE_OFF
+N8520X263.309Y215.3C1=DC(180)
+N8530TC_PART_UNLOAD("PAU-1")
+N8540PUNCH_ON
+N8550X208.309Y215.3
+N8560PUNCH_OFF
+N8570X145.209Y246.75C1=DC(180)
+N8580NIBBLE_ON
+N8590SPP=74.2
+N8600X121.409
+N8610NIBBLE_OFF
+N8620X58.309Y215.3C1=DC(180)
+N8630TC_PART_UNLOAD("PAU-1")
+N8640X30.809Y151.3C1=DC(270)
+N8650NIBBLE_ON
+N8660SPP=74.2
+N8670Y131.1
+N8680NIBBLE_OFF
+N8690X235.809Y151.3C1=DC(270)
+N8700NIBBLE_ON
+N8710SPP=74.2
+N8720Y131.1
+N8730NIBBLE_OFF
+N8740X440.809Y151.3C1=DC(270)
+N8750NIBBLE_ON
+N8760SPP=74.2
+N8770Y131.1
+N8780NIBBLE_OFF
+N8790X645.809Y151.3C1=DC(270)
+N8800NIBBLE_ON
+N8810SPP=74.2
+N8820Y131.1
+N8830NIBBLE_OFF
+N8840X850.809Y151.3C1=DC(270)
+N8850NIBBLE_ON
+N8860SPP=74.2
+N8870Y131.1
+N8880NIBBLE_OFF
+N8890X1055.809Y151.3C1=DC(270)
+N8900NIBBLE_ON
+N8910SPP=74.2
+N8920Y131.1
+N8930NIBBLE_OFF
+N8940PUNCH_ON
+N8950X1028.309Y194.9C1=DC(0)
+N8960PUNCH_OFF
+N8970X965.209Y163.45C1=DC(0)
+N8980NIBBLE_ON
+N8990SPP=74.2
+N9000X941.409
+N9010NIBBLE_OFF
+N9020PUNCH_ON
+N9030X878.309Y194.9
+N9040X823.309Y194.9
+N9050PUNCH_OFF
+N9060X760.209Y163.45C1=DC(0)
+N9070NIBBLE_ON
+N9080SPP=74.2
+N9090X736.409
+N9100NIBBLE_OFF
+N9110PUNCH_ON
+N9120X673.309Y194.9
+N9130X618.309Y194.9
+N9140PUNCH_OFF
+N9150X555.209Y163.45C1=DC(0)
+N9160NIBBLE_ON
+N9170SPP=74.2
+N9180X531.409
+N9190NIBBLE_OFF
+N9200PUNCH_ON
+N9210X468.309Y194.9
+N9220X413.309Y194.9
+N9230PUNCH_OFF
+N9240X350.209Y163.45C1=DC(0)
+N9250NIBBLE_ON
+N9260SPP=74.2
+N9270X326.409
+N9280NIBBLE_OFF
+N9290PUNCH_ON
+N9300X263.309Y194.9
+N9310X208.309Y194.9
+N9320PUNCH_OFF
+N9330X145.209Y163.45C1=DC(0)
+N9340NIBBLE_ON
+N9350SPP=74.2
+N9360X121.409
+N9370NIBBLE_OFF
+N9380PUNCH_ON
+N9390X58.309Y194.9
+N9400X58.309Y87.5
+N9410PUNCH_OFF
+N9420X121.409Y118.95C1=DC(0)
+N9430NIBBLE_ON
+N9440SPP=74.2
+N9450X145.209
+N9460NIBBLE_OFF
+N9470X208.309Y87.5C1=DC(0)
+N9480TC_PART_UNLOAD("PAU-1")
+N9490PUNCH_ON
+N9500X263.309Y87.5
+N9510PUNCH_OFF
+N9520X326.409Y118.95C1=DC(0)
+N9530NIBBLE_ON
+N9540SPP=74.2
+N9550X350.209
+N9560NIBBLE_OFF
+N9570X413.309Y87.5C1=DC(0)
+N9580TC_PART_UNLOAD("PAU-1")
+N9590PUNCH_ON
+N9600X468.309Y87.5
+N9610PUNCH_OFF
+N9620X531.409Y118.95C1=DC(0)
+N9630NIBBLE_ON
+N9640SPP=74.2
+N9650X555.209
+N9660NIBBLE_OFF
+N9670X618.309Y87.5C1=DC(0)
+N9680TC_PART_UNLOAD("PAU-1")
+N9690PUNCH_ON
+N9700X673.309Y87.5
+N9710PUNCH_OFF
+N9720X736.409Y118.95C1=DC(0)
+N9730NIBBLE_ON
+N9740SPP=74.2
+N9750X760.209
+N9760NIBBLE_OFF
+N9770X823.309Y87.5C1=DC(0)
+N9780TC_PART_UNLOAD("PAU-1")
+N9790PUNCH_ON
+N9800X878.309Y87.5
+N9810PUNCH_OFF
+N9820X941.409Y118.95C1=DC(0)
+N9830NIBBLE_ON
+N9840SPP=74.2
+N9850X965.209
+N9860NIBBLE_OFF
+N9870X1028.309Y87.5C1=DC(0)
+N9880TC_PART_UNLOAD("PAU-1")
+N9890TC_SUCTION_OFF
+N9900TC_SHEET_UNLOAD("SHU-1")
+N9910M30
+STOP_TEXT
+C
+ENDE_PROGRAMM
+C
+ED
+
+
