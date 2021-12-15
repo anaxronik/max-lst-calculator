@@ -3,7 +3,9 @@ import { v4 } from "uuid";
 
 interface IFile {
   id: string;
+  result: string | ArrayBuffer | null;
   file: File;
+  size: number;
 }
 export class MainPageStore {
   files: IFile[] = [];
@@ -12,10 +14,19 @@ export class MainPageStore {
     makeAutoObservable(this);
   }
 
-  addFile = async (file: File) => {
-    const newFile = { id: v4(), file };
-    this.files.push(newFile);
-    console.log(newFile);
+  addFile = (file: File) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const { result } = reader;
+      const newFile: IFile = {
+        id: v4(),
+        file,
+        result,
+        size: file.size,
+      };
+      this.files.push(newFile);
+    };
+    reader.readAsText(file);
   };
 
   removeFile = (id: string) => {
