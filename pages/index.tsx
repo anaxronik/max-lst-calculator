@@ -15,7 +15,9 @@ const Home: NextPage = function () {
       <input
         onChange={(e) => {
           if (e.target.files) {
-            Array.from(e.target.files).forEach((file: File) => store.addFile(file));
+            Array.from(e.target.files).forEach((file: File) =>
+              store.addFile(file)
+            );
           }
         }}
         type="file"
@@ -35,11 +37,19 @@ const Home: NextPage = function () {
 
           <tbody className="">
             {store.files.map((f, idx) => (
-              <tr className="p-2 border-b-2 border-gray-200  " key={f.id}>
+              <tr
+                className="p-2 border-b-2 border-gray-200  "
+                key={f.id}
+                title={f.tools
+                  .map(
+                    (t) =>
+                      `id=${t.id}, название=${t.toolName}, количество=${t.count}`
+                  )
+                  .join("\n")}
+              >
                 <td>{idx + 1}</td>
-                <td>{f.file.name}</td>
+                <td>{f.fileName}</td>
                 <td>{`${(Number(f.size) / 1024).toFixed(1)} Кб`}</td>
-                <td>{f.result} </td>
                 <td>
                   <button
                     className="p-2 rounded bg-grey-200 hover:bg-grey-300"
@@ -55,8 +65,28 @@ const Home: NextPage = function () {
         </table>
       </div>
 
-      <h2 className="text-lg mt-10">Отчет</h2>
-      <div>asdsd</div>
+      <h2 className="text-lg mt-10">Отчет по всем файлам</h2>
+      <div>
+        <table className="table-auto w-full bg-gray-100">
+          <thead className="sticky">
+            <tr>
+              <th className="text-left">id</th>
+              <th className="text-left">инструмент</th>
+              <th className="text-left">количество</th>
+            </tr>
+          </thead>
+
+          <tbody className="">
+            {store.report.map((row, idx) => (
+              <tr className="p-2 border-b-2 border-gray-200  " key={idx}>
+                <td>{row.id}</td>
+                <td>{row.toolName}</td>
+                <td>{row.count}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
