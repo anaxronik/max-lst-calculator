@@ -77,8 +77,8 @@ const Home: NextPage = function () {
           </thead>
 
           <tbody className="">
-            {store.report.map((row, idx) => (
-              <tr className="p-2 border-b-2 border-gray-200  " key={idx}>
+            {store.report.map((row) => (
+              <tr className="p-2 border-b-2 border-gray-200  " key={row.id}>
                 <td>{row.id}</td>
                 <td>{row.toolName}</td>
                 <td>{row.count}</td>
